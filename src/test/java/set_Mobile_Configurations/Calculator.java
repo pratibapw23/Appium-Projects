@@ -11,7 +11,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Calculator {
 	static DesiredCapabilities capabilities=new DesiredCapabilities();
-
+		static URL url=null;
 
 	public static void main(String[] args) throws InterruptedException {
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
@@ -21,7 +21,7 @@ public class Calculator {
 		
 		capabilities.setCapability("appPackage", "com.google.android.calculator");
 		capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
-		URL url = null;
+		
 		try {
 			url = new URL("http://0.0.0.0:4723/wd/hub");
 		} catch (MalformedURLException e) {

@@ -25,9 +25,6 @@ public class TestRun {
 			}
 			AndroidDriver<WebElement> driver=new AndroidDriver<WebElement>(url,capabilities);
 			driver.quit();
-		
-		
-
 	}
 
 }
